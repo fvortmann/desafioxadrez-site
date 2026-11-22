@@ -66,7 +66,7 @@ const Index = () => {
               {"\n\nDesafio de Xadrez"}
             </h1>
             <p className="text-base md:text-lg text-white/80 mb-10 leading-relaxed max-w-lg">
-              {"Data: 05 de dezembro (Sábado)​\n\n\nCategorias: 6 à 17 anos\n(Separadas por idades)\nHorário: 15h às 18h00\n\n\nLocal: The British School - Botafogo \nRua Real Grandeza, 99 - Botafogo\nRio de Janeiro - RJ."}
+              {"Data: 05 de dezembro (Sábado)\n\n​Categorias: 6 à 17 anos\n(Separadas por idades)\nHorário: 15h às 18h00\n\n Local: The British School - Botafogo  Rua Real Grandeza, 99 - Botafogo Rio de Janeiro - RJ."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
