@@ -1,3 +1,4 @@
+import logoAsset from "@/assets/logo-desafio-de-xadrez.png.asset.json";
 import { Link } from "react-router-dom";
 import { Heart, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -47,9 +48,14 @@ export const Header = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="font-serif text-2xl md:text-3xl tracking-tight text-foreground hover:text-primary transition-colors duration-300"
+            className="flex items-center transition-opacity duration-300 hover:opacity-80"
+            aria-label="Desafio de Xadrez - página inicial"
           >
-            Maison
+            <img
+              src={logoAsset.url}
+              alt="Desafio de Xadrez"
+              className="h-10 md:h-14 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

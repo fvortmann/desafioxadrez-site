@@ -1,3 +1,4 @@
+import logoAsset from "@/assets/logo-desafio-de-xadrez.png.asset.json";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { collections } from "@/data/products";
@@ -12,9 +13,14 @@ export const Footer = () => {
             <div>
               <Link
                 to="/"
-                className="font-serif text-3xl md:text-4xl tracking-tight text-background"
+                className="inline-block"
+                aria-label="Desafio de Xadrez - página inicial"
               >
-                Maison
+                <img
+                  src={logoAsset.url}
+                  alt="Desafio de Xadrez"
+                  className="h-14 md:h-16 w-auto"
+                />
               </Link>
               <p className="mt-3 text-sm text-background/50 leading-relaxed max-w-xs">
                 Curated home objects and lifestyle pieces for considered living.
