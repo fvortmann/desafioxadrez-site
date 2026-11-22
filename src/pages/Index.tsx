@@ -60,16 +60,13 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-[11px] font-semibold tracking-[0.3em] uppercase text-white/70 mb-6"
             >
-              Curated for Considered Living
+              {"\n"}
             </motion.p>
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-white mb-8 leading-[0.9] tracking-tight">
-              Objects of
-              <br />
-              <span className="italic font-normal">Quiet Beauty</span>
+              {"\n\nDesafio de Xadrez"}
             </h1>
             <p className="text-base md:text-lg text-white/80 mb-10 leading-relaxed max-w-lg">
-              Handcrafted home goods and lifestyle pieces designed to bring
-              warmth and intention to everyday moments.
+              {"Data: 05 de dezembro (Sábado)​\n\n\nCategorias: 6 à 17 anos\n(Separadas por idades)\nHorário: 15h às 18h00\n\n\nLocal: The British School - Botafogo \nRua Real Grandeza, 99 - Botafogo\nRio de Janeiro - RJ."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -78,7 +75,7 @@ const Index = () => {
                 className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium"
               >
                 <Link to="/products">
-                  Shop Now
+                  + DETALHES
                   <ArrowRight className="ml-3 w-4 h-4" />
                 </Link>
               </Button>
