@@ -246,7 +246,7 @@ const Index = () => {
             >
               <img
                 src="/imgs/apoio.png" alt={featuredCollection.name}
-                className="w-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent" />
             </motion.div>
