@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
+import InstitutionalPage from "./pages/InstitutionalPage";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,14 @@ const App = () => (
           <Route path="/products" element={<Products />} />
           <Route path="/product/:slug" element={<ProductDetail />} />
           <Route path="/about" element={<About />} />
+          <Route
+            path="/esg"
+            element={<InstitutionalPage title="ESG" description="Conteúdo em breve." />}
+          />
+          <Route
+            path="/contato"
+            element={<InstitutionalPage title="CONTATO" description="Informações de contato em breve." />}
+          />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

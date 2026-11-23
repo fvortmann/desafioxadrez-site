@@ -59,7 +59,7 @@ export const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden xl:flex items-center gap-6">
             <Link
               to="/"
               className="text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300 link-underline"
@@ -105,6 +105,18 @@ export const Header = () => {
             >
               FOTOS DE TORNEIOS
             </Link>
+            {[
+              { to: "/esg", label: "ESG" },
+              { to: "/contato", label: "CONTATO" },
+            ].map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300 link-underline"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
 
           {/* Right side actions */}
@@ -154,7 +166,9 @@ export const Header = () => {
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-2 hover:bg-accent transition-colors duration-300"
+              className="xl:hidden p-2 hover:bg-accent transition-colors duration-300"
+              aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
+              aria-expanded={mobileMenuOpen}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <AnimatePresence mode="wait">
@@ -192,7 +206,7 @@ export const Header = () => {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-              className="md:hidden border-t border-border overflow-hidden"
+              className="xl:hidden border-t border-border overflow-hidden max-h-[calc(100svh-5rem)] overflow-y-auto"
             >
               <div className="py-8 space-y-6">
                 <Link
@@ -226,6 +240,8 @@ export const Header = () => {
                 <div className="pt-6 border-t border-border space-y-1">
                   {[
                     { to: "/about", label: "FOTOS DE TORNEIOS" },
+                    { to: "/esg", label: "ESG" },
+                    { to: "/contato", label: "CONTATO" },
                     { to: "/cart", label: "Shopping Bag" },
                   ].map((link, i) => (
                     <motion.div

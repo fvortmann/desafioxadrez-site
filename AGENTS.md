@@ -1,2 +1,3 @@
 - Keep all images, fonts and media as files inside the repo (`src/assets/` imports or `public/`), never CDN `.asset.json` pointers or hotlinked URLs — the site is deployed to GitHub Pages, where Lovable's asset CDN paths don't resolve.
 - Keep tournament opening sizing in scoped global CSS with width and height breakpoints so the badge, details and registration button fit the initial viewport without affecting other pages.
+- Use the shared InstitutionalPage within Layout for simple institutional routes; keep unprovided content as a neutral pending notice rather than inventing organization claims or contact details.

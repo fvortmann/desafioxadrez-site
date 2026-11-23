@@ -1,2 +1,4 @@
-- [ ] Adicionar ESG e CONTATO aos menus do computador e do celular; definir seus destinos com o usuário.
+- [x] Adicionar ESG e CONTATO aos menus do computador e do celular, abrindo novas páginas.
+- [ ] Preencher a página ESG; aguarda conteúdo do usuário.
+- [ ] Preencher a página CONTATO; aguarda canais de contato do usuário.
 - [x] Renomear Collections para INFORMAÇÕES nos menus do computador e do celular.
