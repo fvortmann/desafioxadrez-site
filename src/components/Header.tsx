@@ -103,7 +103,7 @@ export const Header = () => {
               to="/about"
               className="text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300 link-underline"
             >
-              About
+              FOTOS DE TORNEIOS
             </Link>
           </div>
 
@@ -225,7 +225,7 @@ export const Header = () => {
                 </div>
                 <div className="pt-6 border-t border-border space-y-1">
                   {[
-                    { to: "/about", label: "About" },
+                    { to: "/about", label: "FOTOS DE TORNEIOS" },
                     { to: "/cart", label: "Shopping Bag" },
                   ].map((link, i) => (
                     <motion.div
