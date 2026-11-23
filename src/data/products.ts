@@ -41,7 +41,7 @@ export const collections: Collection[] = [
   },
   {
     id: "programacao",
-    name: "Programação",
+    name: "A programação",
     slug: "programacao",
     description: "Confira a programação do desafio.",
     image: "/images/photo-1555041469-a586c61ea9bc-w800.jpg",
@@ -49,7 +49,7 @@ export const collections: Collection[] = [
   },
   {
     id: "regulamento",
-    name: "Regulamento",
+    name: "O regulamento",
     slug: "regulamento",
     description: "Tudo sobre o regulamento da diversão.",
     image: "/images/photo-1616486338812-3dadae4b4ace-w800.jpg",
@@ -57,7 +57,7 @@ export const collections: Collection[] = [
   },
   {
     id: "inscricoes",
-    name: "Inscrições",
+    name: "As inscrições",
     slug: "inscricoes",
     description: "Clique aqui para se aplicar no jogo.",
     image: "/images/photo-1578500494198-246f612d3b3d-w800.jpg",
