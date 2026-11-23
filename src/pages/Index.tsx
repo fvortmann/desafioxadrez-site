@@ -259,8 +259,8 @@ const Index = () => {
               className="md:py-12"
             >
               <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-4">Apoio</p>
-              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-[0.95]">Patrocinadora ouro do evento.</h2>
-              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">Uma parceria de longa data.</p>
+              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-[0.95]">Patrocinadora Ouro do evento.</h2>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">Uma parceria de longa data que contribui para tornar este evento possível.</p>
               <Button asChild size="lg" className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium">
                 <Link to="/#">⭐⭐⭐⭐⭐</Link>
               </Button>
