@@ -112,57 +112,6 @@ const Index = () => {
         </motion.div>
       </section>
 
-      {/* Featured Collection */}
-      <section className="py-20 md:py-28">
-        <div className="container-full">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-              className="relative aspect-[4/5] overflow-hidden group"
-            >
-              <img
-                src={featuredCollection.heroImage || featuredCollection.image}
-                alt={featuredCollection.name}
-                className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent" />
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-              className="md:py-12"
-            >
-              <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-4">
-                Featured Collection
-              </p>
-              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-[0.95]">
-                {featuredCollection.name}
-              </h2>
-              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
-                {featuredCollection.description}. Discover sculptural forms that cast warmth and shadow, 
-                designed to transform any space into a sanctuary of light.
-              </p>
-              <Button
-                asChild
-                size="lg"
-                className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium"
-              >
-                <Link to={`/products?collection=${featuredCollection.slug}`}>
-                  Shop {featuredCollection.name}
-                  <ArrowRight className="ml-3 w-4 h-4" />
-                </Link>
-              </Button>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* Collections Grid */}
       <section className="py-24 md:py-32">
         <div className="container-full">
@@ -227,7 +176,7 @@ const Index = () => {
               className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase"
             >
               <Link to="/about">
-                Leia mais sobre nossos outros projetos ...
+                Veja nossos outros projetos.
                 <ArrowRight className="ml-3 w-4 h-4" />
               </Link>
             </Button>
@@ -283,6 +232,107 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Featured Collection */}
+      <section className="py-20 md:py-28">
+        <div className="container-full">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const }}
+              className="relative aspect-[4/5] overflow-hidden group"
+            >
+              <img
+                src={featuredCollection.heroImage || featuredCollection.image}
+                alt={featuredCollection.name}
+                className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent" />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] as const }}
+              className="md:py-12"
+            >
+              <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-4">
+                Apoio
+              </p>
+              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-[0.95]">
+                Veja empresas que nos apoiam.
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
+                Parceria fundamental para essas jornadas.
+              </p>
+              <Button
+                asChild
+                size="lg"
+                className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium"
+              >
+                <Link to={`/#`}>
+                  👑👑👑👑👑
+                  <ArrowRight className="ml-3 w-4 h-4" />
+                </Link>
+              </Button>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Collection */}
+      <section className="py-20 md:py-28">
+        <div className="container-full">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const }}
+              className="relative aspect-[4/5] overflow-hidden group"
+            >
+              <img
+                src={featuredCollection.heroImage || featuredCollection.image}
+                alt={featuredCollection.name}
+                className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent" />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] as const }}
+              className="md:py-12"
+            >
+              <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-4">
+                Organização
+              </p>
+              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-[0.95]">
+                Professor
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
+                Wagner Vortmann
+              </p>
+              <Button
+                asChild
+                size="lg"
+                className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium"
+              >
+                <Link to={`/products?collection=${featuredCollection.slug}`}>
+                  👑👑👑👑👑
+                  <ArrowRight className="ml-3 w-4 h-4" />
+                </Link>
+              </Button>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
     </Layout>
   );
 };
