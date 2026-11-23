@@ -158,6 +158,161 @@
 }
 
 @layer components {
+  .tournament-opening {
+    height: calc(100svh - 16px);
+  }
+
+  .tournament-opening-content {
+    padding-top: 80px;
+    padding-bottom: 32px;
+  }
+
+  .tournament-layout {
+    display: grid;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .tournament-badge {
+    width: min(200px, 24svh);
+    margin-inline: auto;
+  }
+
+  .tournament-title {
+    font-size: 44px;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+
+  .tournament-details {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    .tournament-opening-content {
+      padding-top: 104px;
+      padding-bottom: 64px;
+    }
+
+    .tournament-layout {
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 24px;
+    }
+
+    .tournament-badge {
+      width: auto;
+      margin: 0;
+    }
+
+    .tournament-badge img {
+      width: 100%;
+      height: auto;
+      max-height: min(68svh, 600px);
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .tournament-title {
+      font-size: 72px;
+      margin-bottom: 24px;
+    }
+
+    .tournament-details {
+      font-size: 22px;
+      margin-bottom: 28px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .tournament-layout {
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    }
+
+    .tournament-title {
+      font-size: 96px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .tournament-title {
+      font-size: 112px;
+    }
+  }
+
+  @media (max-width: 1023px) and (max-height: 740px) {
+    .tournament-opening-content {
+      padding-top: 72px;
+      padding-bottom: 24px;
+    }
+
+    .tournament-layout {
+      gap: 12px;
+    }
+
+    .tournament-badge {
+      width: 160px;
+    }
+
+    .tournament-title {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .tournament-details {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (max-height: 600px) {
+    .tournament-opening-content {
+      padding-top: 68px;
+      padding-bottom: 16px;
+    }
+
+    .tournament-layout {
+      gap: 8px;
+    }
+
+    .tournament-badge {
+      width: 140px;
+    }
+
+    .tournament-title {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    .tournament-details {
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .tournament-scroll-indicator {
+      display: none;
+    }
+  }
+
+  @media (min-width: 640px) and (max-height: 600px) {
+    .tournament-layout {
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+    }
+
+    .tournament-badge {
+      order: 2;
+      width: min(32svh, 260px);
+    }
+
+    .tournament-text {
+      order: 1;
+    }
+  }
+
   .container-narrow {
     @apply max-w-5xl mx-auto px-6;
   }

@@ -36,7 +36,7 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section — Full Viewport */}
-      <section ref={heroRef} className="relative h-[100svh] -mt-16 md:-mt-20 overflow-hidden">
+      <section ref={heroRef} className="tournament-opening relative -mt-16 md:-mt-20 overflow-hidden">
         <motion.div className="absolute inset-0" style={{ y: heroImageY }}>
           <img
             src={heroPhoto}
@@ -48,38 +48,30 @@ const Index = () => {
         </motion.div>
 
         <motion.div
-          className="relative container-full h-full flex flex-col justify-end pb-20 md:pb-28 pt-16 md:pt-20"
+          className="tournament-opening-content relative container-full h-full flex flex-col justify-center"
           style={{ opacity: heroOpacity }}
         >
-          <div className="relative lg:flex lg:items-center lg:justify-between lg:gap-12">
-          <div className="w-[120px] mx-auto mb-6 lg:mx-0 lg:mb-0 lg:order-2 lg:w-auto lg:shrink-0">
+          <div className="tournament-layout relative">
+          <div className="tournament-badge lg:order-2">
             <motion.img
               src={tournamentBadge}
               alt="Selo Chess Competition do torneio na The British School"
               initial={{ opacity: 0, scale: 0.92 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-              className="w-full h-auto lg:w-auto lg:h-[min(58svh,500px)]"
+              className="w-full h-auto"
             />
           </div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-            className="relative max-w-none text-center lg:order-1"
+            className="tournament-text relative min-w-0 text-center lg:order-1"
           >
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-[11px] font-semibold tracking-[0.3em] uppercase text-white/70 mb-6"
-            >
-              {"\n"}
-            </motion.p>
-            <h1 className="font-serif font-bold text-[clamp(1.9rem,7vw,8rem)] whitespace-nowrap text-white mb-8 leading-[0.9] tracking-tight">
+            <h1 className="tournament-title font-serif font-bold whitespace-nowrap text-primary-foreground">
               Desafio de Xadrez
             </h1>
-            <p className="text-base md:text-lg text-white/80 mb-10 leading-relaxed max-w-lg mx-auto whitespace-pre-line">
+            <p className="tournament-details text-primary-foreground/90 max-w-xl mx-auto whitespace-pre-line">
               <strong>{"​Categorias: 6 à 17 anos"}</strong>
               {"\n(Separadas por idades)\n\n"}
               <strong>05 de dezembro (Sábado)</strong>
@@ -91,7 +83,7 @@ const Index = () => {
               <Button
                 asChild
                 size="lg"
-                className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium"
+                className="rounded-none px-10 py-6 text-base tracking-[0.15em] uppercase btn-premium"
               >
                 <Link to="/products">
                   INSCRIÇÕES
@@ -107,7 +99,7 @@ const Index = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
-            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+            className="tournament-scroll-indicator absolute bottom-3 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2"
           >
             <span className="text-[10px] tracking-[0.3em] uppercase text-white/50">Scroll</span>
             <motion.div
