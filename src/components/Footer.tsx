@@ -53,21 +53,12 @@ export const Footer = () => {
       {/* Main footer content */}
       <div className="container-full py-12 md:py-16">
         <div className="grid gap-10 md:grid-cols-4">          
+          
+          {/* Explore */}
+          <div></div>
+          
           <div>
-
-            {/* Collections
-            <h4 className="text-[11px] font-semibold tracking-[0.25em] uppercase text-background/40 mb-5">Collections</h4>
-            <ul className="space-y-3">
-              {collections.slice(0, 6).map((collection) => (
-                <li key={collection.id}>
-                  <Link to={`/products?collection=${collection.slug}`} className="text-sm text-background/60 hover:text-background transition-colors duration-300">
-                    {collection.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-             */}
-
+            {/* Menu */}
             <h4 className="text-[11px] font-semibold tracking-[0.25em] uppercase text-background/40 mb-5">Menu</h4>
             <ul className="space-y-3">
               <li>
@@ -83,11 +74,7 @@ export const Footer = () => {
                 <Link to="/products" className="text-sm text-background/60 hover:text-background transition-colors duration-300">ESG</Link>
               </li>              
             </ul>
-
           </div>
-
-          {/* Explore */}
-          <div></div>
 
           {/* Contact */}
           <div>
