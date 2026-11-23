@@ -210,7 +210,7 @@ const Index = () => {
             {instagramImages.map((image, index) => (
               <motion.a
                 key={index}
-                href="https://instagram.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -267,6 +267,9 @@ const Index = () => {
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
                 Uma parceria de longa data.
+                {featuredCollection.heroImage}
+                | oi |                
+                {featuredCollection.image}
               </p>
               <Button
                 asChild
@@ -283,7 +286,7 @@ const Index = () => {
       </section>
       
 
-      {/* Featured Collection 2 */}      
+      {/* Organização */}      
       <section className="py-20 md:py-28">
         <div className="container-full">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
