@@ -245,7 +245,7 @@ const Index = () => {
               className="relative aspect-[4/5] overflow-hidden group"
             >
               <img
-                src={featuredCollection.heroImage || featuredCollection.image}
+                src="/imgs/apoio.png"
                 alt={featuredCollection.name}
                 className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
               />
@@ -267,9 +267,6 @@ const Index = () => {
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
                 Uma parceria de longa data.
-                {featuredCollection.heroImage}
-                | oi |                
-                {featuredCollection.image}
               </p>
               <Button
                 asChild
@@ -298,7 +295,7 @@ const Index = () => {
               className="relative aspect-[4/5] overflow-hidden group"
             >
               <img
-                src={featuredCollection.heroImage || featuredCollection.image}
+                src="/imgs/organizacao.png"
                 alt={featuredCollection.name}
                 className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
               />
