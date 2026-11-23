@@ -54,7 +54,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-            className="max-w-3xl"
+            className="max-w-none"
           >
             <motion.p
               initial={{ opacity: 0 }}
@@ -64,8 +64,8 @@ const Index = () => {
             >
               {"\n"}
             </motion.p>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-white mb-8 leading-[0.9] tracking-tight">
-              {"\n\nDesafio de Xadrez"}
+            <h1 className="font-serif text-[clamp(1.9rem,7vw,8rem)] whitespace-nowrap text-white mb-8 leading-[0.9] tracking-tight">
+              Desafio de Xadrez
             </h1>
             <p className="text-base md:text-lg text-white/80 mb-10 leading-relaxed max-w-lg">
               {"Data: 05 de dezembro (Sábado)\n\n​Categorias: 6 à 17 anos\n(Separadas por idades)\nHorário: 15h às 18h00\n\n Local: The British School - Botafogo  Rua Real Grandeza, 99 - Botafogo Rio de Janeiro - RJ."}
