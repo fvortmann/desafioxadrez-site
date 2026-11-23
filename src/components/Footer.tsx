@@ -96,7 +96,24 @@ export const Footer = () => {
           </div>
 
           {/* Support */}
-          <div></div>
+          <div className="max-w-sm w-full">
+              <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-background/40 mb-3">
+                Newsletter
+              </p>
+              <form className="flex gap-0">
+                <input
+                  type="email"
+                  placeholder="Informe seu email"
+                  className="flex-1 h-12 px-4 text-sm bg-background/5 border border-background/15 text-background placeholder:text-background/30 focus:outline-none focus:border-background/40 transition-colors"
+                />
+                <button
+                  type="submit"
+                  className="h-12 px-5 text-sm font-medium bg-background text-foreground hover:bg-background/90 transition-colors"
+                >
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </form>
+            </div>
 
         </div>
       </div>
