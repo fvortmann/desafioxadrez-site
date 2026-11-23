@@ -71,22 +71,22 @@ export const Footer = () => {
             <h4 className="text-[11px] font-semibold tracking-[0.25em] uppercase text-background/40 mb-5">Menu</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/products" className="text-sm text-background/60 hover:text-background transition-colors duration-300">Shop All</Link>
+                <Link to="/products" className="text-sm text-background/60 hover:text-background transition-colors duration-300">INÍCIO</Link>
               </li>
               <li>
-                <Link to="/products" className="text-sm text-background/60 hover:text-background transition-colors duration-300">Shop All</Link>
+                <Link to="/products" className="text-sm text-background/60 hover:text-background transition-colors duration-300">INFORMAÇÕES</Link>
               </li>
               <li>
-                <Link to="/products" className="text-sm text-background/60 hover:text-background transition-colors duration-300">Shop All</Link>
+                <Link to="/products" className="text-sm text-background/60 hover:text-background transition-colors duration-300">FOTOS DE TORNEIOS</Link>
               </li>
+              <li>
+                <Link to="/products" className="text-sm text-background/60 hover:text-background transition-colors duration-300">ESG</Link>
+              </li>              
             </ul>
 
           </div>
 
           {/* Explore */}
-          <div></div>
-
-          {/* Support */}
           <div></div>
 
           {/* Contact */}
@@ -107,6 +107,10 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
+
+          {/* Support */}
+          <div></div>
+
         </div>
       </div>
 
