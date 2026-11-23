@@ -20,7 +20,23 @@ import { componentTagger } from "lovable-tagger";
 //  },
 //}));
 
-export default defineConfig({
-  plugins: [react()],
-  base: '/',
-})
+//export default defineConfig({
+//  plugins: [react()],  
+//})
+
+export default defineConfig(({ mode }) => ({
+  base: "/desafioxadrez-site/",
+  server: {
+    host: "::",
+    port: 8080,
+    hmr: {
+      overlay: false,
+    },
+  },
+  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+}));
