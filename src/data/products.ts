@@ -52,7 +52,7 @@ export const collections: Collection[] = [
     name: "O regulamento",
     slug: "regulamento",
     description: "Tudo sobre o regulamento da diversão.",
-    image: "/images/photo-1616486338812-3dadae4b4ace-w800.jpg",
+    image: "/imgs/regulamento.jpg",
     heroImage: "/images/photo-1616486338812-3dadae4b4ace-w1920.jpg",
   },
   {
@@ -60,7 +60,7 @@ export const collections: Collection[] = [
     name: "As inscrições",
     slug: "inscricoes",
     description: "Clique aqui para se aplicar no jogo.",
-    image: "/images/photo-1578500494198-246f612d3b3d-w800.jpg",
+    image: "/imgs/inscricoes.jpg",
     heroImage: "/images/photo-1578500494198-246f612d3b3d-w1920.jpg",
   },
   {
