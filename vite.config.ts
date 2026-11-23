@@ -25,7 +25,7 @@ import { componentTagger } from "lovable-tagger";
 //})
 
 export default defineConfig(({ mode }) => ({
-  base: "/desafioxadrez-site/",
+  base: "/",
   server: {
     host: "::",
     port: 8080,
