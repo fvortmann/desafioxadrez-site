@@ -59,7 +59,7 @@ const Index = () => {
               initial={{ opacity: 0, scale: 0.92 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-              className="w-full h-auto lg:w-auto lg:h-[min(58svh,500px)] drop-shadow-2xl"
+              className="w-full h-auto lg:w-auto lg:h-[min(58svh,500px)]"
             />
           </div>
           <motion.div
