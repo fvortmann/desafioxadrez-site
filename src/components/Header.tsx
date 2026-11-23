@@ -60,6 +60,12 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
+            <Link
+              to="/"
+              className="text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300 link-underline"
+            >
+              INÍCIO
+            </Link>
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
@@ -92,13 +98,6 @@ export const Header = () => {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
-
-            <Link
-              to="/products"
-              className="text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300 link-underline"
-            >
-              Shop All
-            </Link>
 
             <Link
               to="/about"
@@ -196,6 +195,13 @@ export const Header = () => {
               className="md:hidden border-t border-border overflow-hidden"
             >
               <div className="py-8 space-y-6">
+                <Link
+                  to="/"
+                  className="block px-2 py-2.5 text-sm font-medium hover:bg-accent transition-colors duration-300"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  INÍCIO
+                </Link>
                 <div className="space-y-1">
                   <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-muted-foreground/50 px-2 mb-3">
                     Collections
@@ -219,7 +225,6 @@ export const Header = () => {
                 </div>
                 <div className="pt-6 border-t border-border space-y-1">
                   {[
-                    { to: "/products", label: "Shop All" },
                     { to: "/about", label: "About" },
                     { to: "/cart", label: "Shopping Bag" },
                   ].map((link, i) => (
