@@ -263,10 +263,10 @@ const Index = () => {
                 Apoio
               </p>
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-[0.95]">
-                Veja empresas que nos apoiam.
+                Patrocinadora ouro do evento.
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
-                Parceria fundamental para essas jornadas.
+                Uma parceria de longa data.
               </p>
               <Button
                 asChild
@@ -274,8 +274,7 @@ const Index = () => {
                 className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium"
               >
                 <Link to={`/#`}>
-                  👑👑👑👑👑
-                  <ArrowRight className="ml-3 w-4 h-4" />
+                  ⭐⭐⭐⭐⭐
                 </Link>
               </Button>
             </motion.div>
@@ -313,19 +312,18 @@ const Index = () => {
                 Organização
               </p>
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-[0.95]">
-                Professor
+                Professor <br> Wagner Vortmann
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
-                Wagner Vortmann
+                Juntos somos mais fortes.
               </p>
               <Button
                 asChild
                 size="lg"
                 className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium"
               >
-                <Link to={`/products?collection=${featuredCollection.slug}`}>
+                <Link to={`/#`}>
                   👑👑👑👑👑
-                  <ArrowRight className="ml-3 w-4 h-4" />
                 </Link>
               </Button>
             </motion.div>
