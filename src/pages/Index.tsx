@@ -7,7 +7,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { CollectionCard } from "@/components/CollectionCard";
 import { collections, getNewProducts, products } from "@/data/products";
 import { Button } from "@/components/ui/button";
-import heroPhoto from "@/assets/torneio_xadrez_criancas.jpg";
+import heroPhoto from "@/assets/torneio_xadrez_criancas_2.jpg";
 import tournamentBadge from "@/assets/logo_torneio_tbs.webp";
 
 const Index = () => {
@@ -41,7 +41,7 @@ const Index = () => {
           <img
             src={heroPhoto}
             alt="Crianças participantes do Desafio de Xadrez com troféus e medalhas"
-            className="w-full h-[120%] object-cover object-[center_30%] animate-ken-burns"
+            className="w-full h-[120%] object-cover object-[center_20%] animate-ken-burns"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/20 to-charcoal/75" />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/30 to-transparent" />
