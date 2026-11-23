@@ -25,7 +25,7 @@ export const Footer = () => {
               />
             </Link>
             <p className="mt-3 text-sm text-background/50 leading-relaxed max-w-xs">
-              Lema Desafio 2026: Sozinhos vamos longe. Juntos, somos mais rápidos e mais fortes.
+              Lema do Desafio 2026: Sozinhos vamos longe, mas juntos também somos mais rápidos e mais fortes.
             </p>
           </div>
           
