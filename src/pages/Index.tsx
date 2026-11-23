@@ -163,50 +163,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Latest Products */}
-      <section className="py-20 md:py-28 bg-linen">
-        <div className="container-full">
-          <div className="flex items-end justify-between mb-14">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-3">
-                Just Arrived
-              </p>
-              <h2 className="font-serif text-4xl md:text-5xl text-foreground">
-                Latest Products
-              </h2>
-            </motion.div>
-            <Link
-              to="/products"
-              className="hidden md:flex items-center gap-3 text-sm font-medium tracking-[0.1em] uppercase text-muted-foreground hover:text-foreground transition-colors group"
-            >
-              View All
-              <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
-            {latestProducts.map((product, index) => (
-              <ProductCard key={product.id} product={product} index={index} />
-            ))}
-          </div>
-
-          <div className="mt-14 text-center md:hidden">
-            <Button
-              asChild
-              variant="outline"
-              className="rounded-none px-8 py-5 text-sm tracking-[0.15em] uppercase"
-            >
-              <Link to="/products">View All Products</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Collections Grid */}
       <section className="py-24 md:py-32">
         <div className="container-full">
@@ -216,31 +172,11 @@ const Index = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
-          >
-            <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-3">
-              Browse By
-            </p>
-            <h2 className="font-serif text-4xl md:text-5xl text-foreground">
-              Collections
-            </h2>
+          >            
           </motion.div>
 
           {/* Asymmetric grid layout */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
-            {/* First row: 2 items */}
-            <div className="md:col-span-7">
-              <CollectionCard
-                collection={displayedCollections[0]}
-                index={0}
-                variant="wide"
-              />
-            </div>
-            <div className="md:col-span-5">
-              <CollectionCard
-                collection={displayedCollections[1]}
-                index={1}
-              />
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">                      
 
             {/* Second row: 3 items */}
             <div className="md:col-span-4">
@@ -262,14 +198,6 @@ const Index = () => {
               />
             </div>
 
-            {/* Third row: 1 wide item */}
-            <div className="md:col-span-12">
-              <CollectionCard
-                collection={displayedCollections[5]}
-                index={5}
-                variant="wide"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -284,17 +212,13 @@ const Index = () => {
             transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const }}
           >
             <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-6">
-              About Us
+              Sobre o Desafio!!!
             </p>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-[1.3] mb-8">
-              We believe in the beauty of slow living—in objects made with care,
-              materials that age gracefully, and spaces that invite{" "}
-              <span className="italic">pause</span>.
+              Acreditamos que desafios movem fronteiras e preparam nossas criança para o {" "} <span className="italic">FUTURO</span>.
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-              Every piece in our collection is selected for its material integrity, 
-              its maker's story, and its ability to endure beautifully. We work with 
-              artisans who share our commitment to craft and sustainability.
+              Venha participar dessa divertida aventura.
             </p>
             <Button
               asChild
@@ -303,7 +227,7 @@ const Index = () => {
               className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase"
             >
               <Link to="/about">
-                Read Our Story
+                Leia mais sobre nossos outros projetos ...
                 <ArrowRight className="ml-3 w-4 h-4" />
               </Link>
             </Button>
@@ -322,13 +246,13 @@ const Index = () => {
             className="text-center mb-12"
           >
             <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-3">
-              Follow Us
+              Veja nossos torneios passados.
             </p>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
-              @maisonhome
+              @feitoComCarinho
             </h2>
             <p className="text-muted-foreground max-w-md mx-auto">
-              Join our community and get inspired by curated spaces and behind-the-scenes moments.
+              Inspire-se com os seus próprios filhos e venha torcer por eles, em um espaço e momento acolhedor, ao mesmo tempo de conquistas.
             </p>
           </motion.div>
 
