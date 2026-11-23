@@ -44,7 +44,7 @@ export const collections: Collection[] = [
     name: "A programação",
     slug: "programacao",
     description: "Confira a programação do desafio.",
-    image: "/images/photo-1555041469-a586c61ea9bc-w800.jpg",
+    image: "/imgs/programacao.jpg",
     heroImage: "/images/photo-1555041469-a586c61ea9bc-w1920.jpg",
   },
   {

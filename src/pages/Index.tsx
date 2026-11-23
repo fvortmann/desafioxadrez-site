@@ -54,7 +54,7 @@ const Index = () => {
           <div className="tournament-layout relative">
           <div className="tournament-badge lg:order-2">
             <motion.img
-              src={tournamentBadge}
+              src="/imgs/selo.png"
               alt="Selo Chess Competition do torneio na The British School"
               initial={{ opacity: 0, scale: 0.92 }}
               animate={{ opacity: 1, scale: 1 }}
