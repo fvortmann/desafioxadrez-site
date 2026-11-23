@@ -245,9 +245,8 @@ const Index = () => {
               className="relative aspect-[4/5] overflow-hidden group"
             >
               <img
-                src="/imgs/apoio.png"
-                alt={featuredCollection.name}
-                className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
+                src="/imgs/apoio.png" alt={featuredCollection.name}
+                className="w-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent" />
             </motion.div>
@@ -259,23 +258,11 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] as const }}
               className="md:py-12"
             >
-              <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-4">
-                Apoio
-              </p>
-              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-[0.95]">
-                Patrocinadora ouro do evento.
-              </h2>
-              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
-                Uma parceria de longa data.
-              </p>
-              <Button
-                asChild
-                size="lg"
-                className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium"
-              >
-                <Link to="/#">
-                  ⭐⭐⭐⭐⭐
-                </Link>
+              <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-4">Apoio</p>
+              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-[0.95]">Patrocinadora ouro do evento.</h2>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">Uma parceria de longa data.</p>
+              <Button asChild size="lg" className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium">
+                <Link to="/#">⭐⭐⭐⭐⭐</Link>
               </Button>
             </motion.div>
           </div>
@@ -294,7 +281,7 @@ const Index = () => {
               transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const }}
               className="relative aspect-[4/5] overflow-hidden group"
             >
-              <img src="/imgs/organizacao.png" alt={featuredCollection.name} className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-100"/>
+              <img src="/imgs/organizacao.png" alt={featuredCollection.name} className="object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-100"/>
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent" />
             </motion.div>
 
