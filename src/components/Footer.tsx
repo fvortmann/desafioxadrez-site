@@ -6,50 +6,7 @@ import { collections } from "@/data/products";
 export const Footer = () => {
   return (
     <footer className="bg-foreground text-background">
-      {/* Top bar */}
-      <div className="border-b border-background/10">
-        <div className="container-full py-12 md:py-16">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
-            <div>
-              <Link
-                to="/"
-                className="inline-block"
-                aria-label="Desafio de Xadrez - página inicial"
-              >
-                <img
-                  src={logoAsset}
-                  alt="Desafio de Xadrez"
-                  className="h-14 md:h-16 w-auto"
-                />
-              </Link>
-              <p className="mt-3 text-sm text-background/50 leading-relaxed max-w-xs">
-                Lema Desafio 2026: Sozinhos vamos longe. Juntos, somos mais rápidos e mais fortes.
-              </p>
-            </div>
-
-            {/* Newsletter in footer */}
-            <div className="max-w-sm w-full">
-              <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-background/40 mb-3">
-                Newsletter
-              </p>
-              <form className="flex gap-0">
-                <input
-                  type="email"
-                  placeholder="Informe seu email"
-                  className="flex-1 h-12 px-4 text-sm bg-background/5 border border-background/15 text-background placeholder:text-background/30 focus:outline-none focus:border-background/40 transition-colors"
-                />
-                <button
-                  type="submit"
-                  className="h-12 px-5 text-sm font-medium bg-background text-foreground hover:bg-background/90 transition-colors"
-                >
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      
       {/* Main footer content */}
       <div className="container-full py-12 md:py-16">
         <div className="grid gap-10 md:grid-cols-4">          
