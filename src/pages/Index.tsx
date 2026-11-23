@@ -80,7 +80,7 @@ const Index = () => {
               Desafio de Xadrez
             </h1>
             <p className="text-base md:text-lg text-white/80 mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0 whitespace-pre-line">
-              {"​Categorias: 6 à 17 anos (Separadas por idades)\n\n05 de dezembro (Sábado) / 15h às 18h00\n\nThe British School - Botafogo\nRua Real Grandeza, 99 - Botafogo\nRio de Janeiro - RJ."}
+              {"​Categorias: 6 à 17 anos\n(Separadas por idades)\n\n05 de dezembro (Sábado) / 15h às 18h00\n\nThe British School - Botafogo\nRua Real Grandeza, 99 - Botafogo\nRio de Janeiro - RJ."}
             </p>
             <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4">
               <Button
