@@ -313,7 +313,7 @@ const Index = () => {
                 Organização
               </p>
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-[0.95]">
-                Professor <br> Wagner Vortmann
+                Professor </br> Wagner Vortmann
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
                 Juntos somos mais fortes.
