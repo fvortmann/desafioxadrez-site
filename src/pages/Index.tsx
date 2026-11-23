@@ -8,6 +8,7 @@ import { CollectionCard } from "@/components/CollectionCard";
 import { collections, getNewProducts, products } from "@/data/products";
 import { Button } from "@/components/ui/button";
 import heroPhoto from "@/assets/torneio_xadrez_criancas.jpg";
+import tournamentBadge from "@/assets/logo_torneio_tbs.webp";
 
 const Index = () => {
   const newProducts = getNewProducts();
@@ -50,11 +51,22 @@ const Index = () => {
           className="relative container-full h-full flex flex-col justify-end pb-20 md:pb-28 pt-16 md:pt-20"
           style={{ opacity: heroOpacity }}
         >
+          <div className="relative lg:flex lg:items-center lg:justify-between lg:gap-12">
+          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] max-w-[360px] opacity-25 lg:pointer-events-auto lg:static lg:order-2 lg:translate-x-0 lg:translate-y-0 lg:w-auto lg:max-w-none lg:opacity-100 lg:shrink-0">
+            <motion.img
+              src={tournamentBadge}
+              alt="Selo Chess Competition do torneio na The British School"
+              initial={{ opacity: 0, scale: 0.92 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] as const }}
+              className="w-full h-auto lg:w-auto lg:h-[min(58svh,500px)] drop-shadow-2xl"
+            />
+          </div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-            className="max-w-none"
+            className="relative max-w-none lg:order-1"
           >
             <motion.p
               initial={{ opacity: 0 }}
@@ -83,6 +95,7 @@ const Index = () => {
               </Button>
             </div>
           </motion.div>
+          </div>
 
           {/* Scroll indicator */}
           <motion.div
