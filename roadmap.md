@@ -1,4 +1,2 @@
 - [x] Adicionar ESG e CONTATO aos menus do computador e do celular.
-- [x] Direcionar ESG para /about por enquanto, conforme solicitado.
 - [ ] Preencher a página CONTATO; aguarda canais de contato do usuário.
-- [x] Renomear Collections para INFORMAÇÕES nos menus do computador e do celular.
