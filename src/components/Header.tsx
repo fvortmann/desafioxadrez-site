@@ -21,6 +21,8 @@ import {
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 
+const informationCollections = collections.slice(0, 3);
+
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -74,7 +76,7 @@ export const Header = () => {
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-1 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                      {collections.map((collection) => (
+                      {informationCollections.map((collection) => (
                         <li key={collection.id}>
                           <NavigationMenuLink asChild>
                             <Link
@@ -220,7 +222,7 @@ export const Header = () => {
                   <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-muted-foreground/50 px-2 mb-3">
                     INFORMAÇÕES
                   </p>
-                  {collections.slice(0, 6).map((collection, i) => (
+                  {informationCollections.map((collection, i) => (
                     <motion.div
                       key={collection.id}
                       initial={{ opacity: 0, x: -10 }}
