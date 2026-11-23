@@ -52,7 +52,7 @@ const Index = () => {
           style={{ opacity: heroOpacity }}
         >
           <div className="relative lg:flex lg:items-center lg:justify-between lg:gap-12">
-          <div className="w-[120px] mb-6 lg:mb-0 lg:order-2 lg:w-auto lg:shrink-0">
+          <div className="w-[120px] mx-auto mb-6 lg:mx-0 lg:mb-0 lg:order-2 lg:w-auto lg:shrink-0">
             <motion.img
               src={tournamentBadge}
               alt="Selo Chess Competition do torneio na The British School"
@@ -66,7 +66,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-            className="relative max-w-none lg:order-1"
+            className="relative max-w-none text-center lg:text-left lg:order-1"
           >
             <motion.p
               initial={{ opacity: 0 }}
@@ -79,10 +79,10 @@ const Index = () => {
             <h1 className="font-serif text-[clamp(1.9rem,7vw,8rem)] whitespace-nowrap text-white mb-8 leading-[0.9] tracking-tight">
               Desafio de Xadrez
             </h1>
-            <p className="text-base md:text-lg text-white/80 mb-10 leading-relaxed max-w-lg whitespace-pre-line">
+            <p className="text-base md:text-lg text-white/80 mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0 whitespace-pre-line">
               {"​Categorias: 6 à 17 anos (Separadas por idades)\n\n05 de dezembro (Sábado) / 15h às 18h00\n\nThe British School - Botafogo\nRua Real Grandeza, 99 - Botafogo\nRio de Janeiro - RJ."}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4">
               <Button
                 asChild
                 size="lg"
