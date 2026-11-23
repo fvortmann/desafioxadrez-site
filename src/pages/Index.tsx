@@ -234,7 +234,6 @@ const Index = () => {
       </section>
 
       {/* Featured Collection */}
-      {/*
       <section className="py-20 md:py-28">
         <div className="container-full">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -273,16 +272,14 @@ const Index = () => {
                 asChild
                 size="lg"
                 className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium"
-              >
-                <Link to={`/#`}>
-                  ⭐⭐⭐⭐⭐
-                </Link>
+              >                
+                  ⭐⭐⭐⭐⭐               
               </Button>
             </motion.div>
           </div>
         </div>
       </section>
-      /*}
+      
 
       {/* Featured Collection */}
       {/*
