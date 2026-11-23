@@ -70,7 +70,7 @@ export const Header = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="bg-transparent text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground">
-                    Collections
+                    INFORMAÇÕES
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-1 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
@@ -204,7 +204,7 @@ export const Header = () => {
                 </Link>
                 <div className="space-y-1">
                   <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-muted-foreground/50 px-2 mb-3">
-                    Collections
+                    INFORMAÇÕES
                   </p>
                   {collections.slice(0, 6).map((collection, i) => (
                     <motion.div

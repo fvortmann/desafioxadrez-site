@@ -1,0 +1,2 @@
+- [ ] Adicionar ESG e CONTATO aos menus do computador e do celular; definir seus destinos com o usuário.
+- [x] Renomear Collections para INFORMAÇÕES nos menus do computador e do celular.
