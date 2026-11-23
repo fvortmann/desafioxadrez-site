@@ -55,7 +55,22 @@ export const Footer = () => {
         <div className="grid gap-10 md:grid-cols-4">          
           
           {/* Explore */}
-          <div></div>
+          <div>
+            <Link
+              to="/"
+              className="inline-block"
+              aria-label="Desafio de Xadrez - página inicial"
+            >
+              <img
+                src={logoAsset}
+                alt="Desafio de Xadrez"
+                className="h-14 md:h-16 w-auto"
+              />
+            </Link>
+            <p className="mt-3 text-sm text-background/50 leading-relaxed max-w-xs">
+              Lema Desafio 2026: Sozinhos vamos longe. Juntos, somos mais rápidos e mais fortes.
+            </p>
+          </div>
           
           <div>
             {/* Menu */}
