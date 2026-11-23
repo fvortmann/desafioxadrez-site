@@ -67,7 +67,7 @@ const Index = () => {
             <h1 className="font-serif text-[clamp(1.9rem,7vw,8rem)] whitespace-nowrap text-white mb-8 leading-[0.9] tracking-tight">
               Desafio de Xadrez
             </h1>
-            <p className="text-base md:text-lg text-white/80 mb-10 leading-relaxed max-w-lg">
+            <p className="text-base md:text-lg text-white/80 mb-10 leading-relaxed max-w-lg whitespace-pre-line">
               {"Data: 05 de dezembro (Sábado)\n\n\n​Categorias: 6 à 17 anos (Separadas por idades)\nHorário: 15h às 18h00\n\nLocal: The British School - Botafogo\nRua Real Grandeza, 99 - Botafogo\n\nRio de Janeiro - RJ."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
