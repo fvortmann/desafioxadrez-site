@@ -23,19 +23,19 @@ export const Footer = () => {
                 />
               </Link>
               <p className="mt-3 text-sm text-background/50 leading-relaxed max-w-xs">
-                Curated home objects and lifestyle pieces for considered living.
+                Lema Desafio 2026: Sozinhos vamos longe. Juntos, somos mais rápidos e mais fortes.
               </p>
             </div>
 
             {/* Newsletter in footer */}
             <div className="max-w-sm w-full">
               <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-background/40 mb-3">
-                Stay Connected
+                Newsletter
               </p>
               <form className="flex gap-0">
                 <input
                   type="email"
-                  placeholder="Your email"
+                  placeholder="Informe seu email"
                   className="flex-1 h-12 px-4 text-sm bg-background/5 border border-background/15 text-background placeholder:text-background/30 focus:outline-none focus:border-background/40 transition-colors"
                 />
                 <button
@@ -52,109 +52,57 @@ export const Footer = () => {
 
       {/* Main footer content */}
       <div className="container-full py-12 md:py-16">
-        <div className="grid gap-10 md:grid-cols-4">
-          {/* Collections */}
+        <div className="grid gap-10 md:grid-cols-4">          
           <div>
-            <h4 className="text-[11px] font-semibold tracking-[0.25em] uppercase text-background/40 mb-5">
-              Collections
-            </h4>
+
+            {/* Collections
+            <h4 className="text-[11px] font-semibold tracking-[0.25em] uppercase text-background/40 mb-5">Collections</h4>
             <ul className="space-y-3">
               {collections.slice(0, 6).map((collection) => (
                 <li key={collection.id}>
-                  <Link
-                    to={`/products?collection=${collection.slug}`}
-                    className="text-sm text-background/60 hover:text-background transition-colors duration-300"
-                  >
+                  <Link to={`/products?collection=${collection.slug}`} className="text-sm text-background/60 hover:text-background transition-colors duration-300">
                     {collection.name}
                   </Link>
                 </li>
               ))}
             </ul>
+             */}
+
+            <h4 className="text-[11px] font-semibold tracking-[0.25em] uppercase text-background/40 mb-5">Menu</h4>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/products" className="text-sm text-background/60 hover:text-background transition-colors duration-300">Shop All</Link>
+              </li>
+              <li>
+                <Link to="/products" className="text-sm text-background/60 hover:text-background transition-colors duration-300">Shop All</Link>
+              </li>
+              <li>
+                <Link to="/products" className="text-sm text-background/60 hover:text-background transition-colors duration-300">Shop All</Link>
+              </li>
+            </ul>
+
           </div>
 
           {/* Explore */}
-          <div>
-            <h4 className="text-[11px] font-semibold tracking-[0.25em] uppercase text-background/40 mb-5">
-              Explore
-            </h4>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  to="/products"
-                  className="text-sm text-background/60 hover:text-background transition-colors duration-300"
-                >
-                  Shop All
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="text-sm text-background/60 hover:text-background transition-colors duration-300"
-                >
-                  Our Story
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/cart"
-                  className="text-sm text-background/60 hover:text-background transition-colors duration-300"
-                >
-                  Shopping Bag
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <div></div>
 
           {/* Support */}
-          <div>
-            <h4 className="text-[11px] font-semibold tracking-[0.25em] uppercase text-background/40 mb-5">
-              Support
-            </h4>
-            <ul className="space-y-3">
-              <li>
-                <a
-                  href="#"
-                  className="text-sm text-background/60 hover:text-background transition-colors duration-300"
-                >
-                  Shipping & Returns
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm text-background/60 hover:text-background transition-colors duration-300"
-                >
-                  Care Guide
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm text-background/60 hover:text-background transition-colors duration-300"
-                >
-                  FAQ
-                </a>
-              </li>
-            </ul>
-          </div>
+          <div></div>
 
           {/* Contact */}
           <div>
             <h4 className="text-[11px] font-semibold tracking-[0.25em] uppercase text-background/40 mb-5">
-              Contact
+              Contato
             </h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="mailto:hello@maison.com"
-                  className="text-sm text-background/60 hover:text-background transition-colors duration-300"
-                >
-                  hello@maison.com
+                <a href="mailto:contato.vpe@hotmail.com" className="text-sm text-background/60 hover:text-background transition-colors duration-300">                  
+                  contato.vpe@hotmail.com
                 </a>
               </li>
               <li>
                 <p className="text-sm text-background/40 leading-relaxed">
-                  Mon–Fri, 9am–6pm CET
+                  Tel./WhatsApp: +55 (21) 9.9909-2345
                 </p>
               </li>
             </ul>
@@ -166,7 +114,7 @@ export const Footer = () => {
       <div className="border-t border-background/10">
         <div className="container-full py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-background/30">
-            © {new Date().getFullYear()} Maison. All rights reserved.
+            © {new Date().getFullYear()} - All rights reserved.
           </p>
           <div className="flex gap-8">
             <a
