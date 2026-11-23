@@ -43,7 +43,7 @@ const Index = () => {
             alt="Crianças participantes do Desafio de Xadrez com troféus e medalhas"
             className="w-full h-[120%] object-cover object-[center_20%] animate-ken-burns"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/20 to-charcoal/75" />
+          <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/45 to-charcoal/85" />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/30 to-transparent" />
         </motion.div>
 
