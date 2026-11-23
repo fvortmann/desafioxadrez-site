@@ -106,7 +106,7 @@ export const Header = () => {
               FOTOS DE TORNEIOS
             </Link>
             {[
-              { to: "/esg", label: "ESG" },
+              { to: "/about", label: "ESG" },
               { to: "/contato", label: "CONTATO" },
             ].map((link) => (
               <Link
@@ -240,12 +240,12 @@ export const Header = () => {
                 <div className="pt-6 border-t border-border space-y-1">
                   {[
                     { to: "/about", label: "FOTOS DE TORNEIOS" },
-                    { to: "/esg", label: "ESG" },
+                    { to: "/about", label: "ESG" },
                     { to: "/contato", label: "CONTATO" },
                     { to: "/cart", label: "Shopping Bag" },
                   ].map((link, i) => (
                     <motion.div
-                      key={link.to}
+                      key={link.label}
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.3 + i * 0.05 }}
