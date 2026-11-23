@@ -22,5 +22,5 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig({
   plugins: [react()],
-  base: '/desafioxadrez-site/'
+  base: '/',
 });
