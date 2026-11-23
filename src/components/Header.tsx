@@ -1,6 +1,6 @@
 import logoAsset from "@/assets/logo-desafio-de-xadrez.png";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Camera, House, Info, Leaf, Mail, Menu, ShoppingBag, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { collections } from "@/data/products";
@@ -56,14 +56,16 @@ export const Header = () => {
           <div className="hidden xl:flex items-center gap-6">
             <Link
               to="/"
-              className="text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300 link-underline"
+              className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300 link-underline"
             >
+              <House className="w-4 h-4 shrink-0" aria-hidden="true" />
               INÍCIO
             </Link>
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="bg-transparent text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground">
+                    <Info className="w-4 h-4 shrink-0 mr-2" aria-hidden="true" />
                     INFORMAÇÕES
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -95,19 +97,21 @@ export const Header = () => {
 
             <Link
               to="/about"
-              className="text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300 link-underline"
+              className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300 link-underline"
             >
+              <Camera className="w-4 h-4 shrink-0" aria-hidden="true" />
               FOTOS DE TORNEIOS
             </Link>
             {[
-              { to: "/about", label: "ESG" },
-              { to: "/contato", label: "CONTATO" },
+              { to: "/about", label: "ESG", icon: Leaf },
+              { to: "/contato", label: "CONTATO", icon: Mail },
             ].map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className="text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300 link-underline"
+                className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300 link-underline"
               >
+                <link.icon className="w-4 h-4 shrink-0" aria-hidden="true" />
                 {link.label}
               </Link>
             ))}
@@ -162,13 +166,15 @@ export const Header = () => {
               <div className="py-8 space-y-6">
                 <Link
                   to="/"
-                  className="block px-2 py-2.5 text-sm font-medium hover:bg-accent transition-colors duration-300"
+                  className="flex items-center gap-2 px-2 py-2.5 text-sm font-medium hover:bg-accent transition-colors duration-300"
                   onClick={() => setMobileMenuOpen(false)}
                 >
+                  <House className="w-4 h-4 shrink-0" aria-hidden="true" />
                   INÍCIO
                 </Link>
                 <div className="space-y-1">
-                  <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-muted-foreground/50 px-2 mb-3">
+                  <p className="flex items-center gap-2 text-[10px] font-semibold tracking-[0.3em] uppercase text-muted-foreground/50 px-2 mb-3">
+                    <Info className="w-4 h-4 shrink-0" aria-hidden="true" />
                     INFORMAÇÕES
                   </p>
                   {informationCollections.map((collection, i) => (
@@ -190,10 +196,10 @@ export const Header = () => {
                 </div>
                 <div className="pt-6 border-t border-border space-y-1">
                   {[
-                    { to: "/about", label: "FOTOS DE TORNEIOS" },
-                    { to: "/about", label: "ESG" },
-                    { to: "/contato", label: "CONTATO" },
-                    { to: "/cart", label: "Shopping Bag" },
+                    { to: "/about", label: "FOTOS DE TORNEIOS", icon: Camera },
+                    { to: "/about", label: "ESG", icon: Leaf },
+                    { to: "/contato", label: "CONTATO", icon: Mail },
+                    { to: "/cart", label: "Shopping Bag", icon: ShoppingBag },
                   ].map((link, i) => (
                     <motion.div
                       key={link.label}
@@ -203,9 +209,10 @@ export const Header = () => {
                     >
                       <Link
                         to={link.to}
-                        className="block px-2 py-2.5 text-sm font-medium hover:bg-accent transition-colors duration-300"
+                        className="flex items-center gap-2 px-2 py-2.5 text-sm font-medium hover:bg-accent transition-colors duration-300"
                         onClick={() => setMobileMenuOpen(false)}
                       >
+                        <link.icon className="w-4 h-4 shrink-0" aria-hidden="true" />
                         {link.label}
                       </Link>
                     </motion.div>
