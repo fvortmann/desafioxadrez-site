@@ -234,6 +234,7 @@ const Index = () => {
       </section>
 
       {/* Featured Collection */}
+      {/*
       <section className="py-20 md:py-28">
         <div className="container-full">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -281,8 +282,10 @@ const Index = () => {
           </div>
         </div>
       </section>
+      /*}
 
       {/* Featured Collection */}
+      {/*
       <section className="py-20 md:py-28">
         <div className="container-full">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -330,6 +333,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      */}
 
     </Layout>
   );
