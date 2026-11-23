@@ -52,7 +52,7 @@ const Index = () => {
           style={{ opacity: heroOpacity }}
         >
           <div className="relative lg:flex lg:items-center lg:justify-between lg:gap-12">
-          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] max-w-[360px] opacity-25 lg:pointer-events-auto lg:static lg:order-2 lg:translate-x-0 lg:translate-y-0 lg:w-auto lg:max-w-none lg:opacity-100 lg:shrink-0">
+          <div className="w-[120px] mb-6 lg:mb-0 lg:order-2 lg:w-auto lg:shrink-0">
             <motion.img
               src={tournamentBadge}
               alt="Selo Chess Competition do torneio na The British School"
