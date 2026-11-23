@@ -242,7 +242,7 @@ const Index = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-              className="relative aspect-[2/5] overflow-hidden group"
+              className=""
             >
               <img
                 src="/imgs/apoio.png" alt={featuredCollection.name}
