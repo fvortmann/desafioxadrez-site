@@ -41,7 +41,7 @@ const Index = () => {
           <img
             src={heroPhoto}
             alt="Crianças participantes do Desafio de Xadrez com troféus e medalhas"
-            className="w-full h-[120%] object-cover object-[center_30%] animate-ken-burns"
+            className="w-full h-[120%] object-cover object-[center_30%] animate-ken-burns opacity-30 lg:opacity-100"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/20 to-charcoal/75" />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/30 to-transparent" />
@@ -52,7 +52,7 @@ const Index = () => {
           style={{ opacity: heroOpacity }}
         >
           <div className="relative lg:flex lg:items-center lg:justify-between lg:gap-12">
-          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] max-w-[360px] opacity-25 lg:pointer-events-auto lg:static lg:order-2 lg:translate-x-0 lg:translate-y-0 lg:w-auto lg:max-w-none lg:opacity-100 lg:shrink-0">
+          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] max-w-[360px] lg:pointer-events-auto lg:static lg:order-2 lg:translate-x-0 lg:translate-y-0 lg:w-auto lg:max-w-none lg:shrink-0">
             <motion.img
               src={tournamentBadge}
               alt="Selo Chess Competition do torneio na The British School"
