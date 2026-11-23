@@ -112,7 +112,7 @@ const Index = () => {
         </motion.div>
       </section>
 
-      {/* Collections Grid */}
+      {/* Programacao, Regulamento e Inscricao - Grid */}
       <section className="py-24 md:py-32">
         <div className="container-full">
           <motion.div
@@ -151,7 +151,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Us Section */}
+      {/* Desafio Section */}
       <section className="py-24 md:py-32 bg-linen">
         <div className="container-narrow text-center">
           <motion.div
@@ -161,13 +161,13 @@ const Index = () => {
             transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const }}
           >
             <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-6">
-              Sobre o Desafio!!!
+              O Desafio!!!
             </p>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-[1.3] mb-8">
-              Acreditamos que desafios movem fronteiras e preparam nossas criança para o {" "} <span className="italic">FUTURO</span>.
+              Acreditamos que desafios e riscos controlados movem fronteiras e preparam crianças para o <span className="italic">FUTURO</span>.
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-              Venha participar dessa divertida aventura.
+              Venham participar dessa divertida aventura.
             </p>
             <Button
               asChild
@@ -176,7 +176,7 @@ const Index = () => {
               className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase"
             >
               <Link to="/about">
-                Veja nossos outros projetos.
+                Veja mais projetos.
                 <ArrowRight className="ml-3 w-4 h-4" />
               </Link>
             </Button>
@@ -184,7 +184,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Follow Us / Instagram Section */}
+      {/* Torneios Passados Section */}
       <section className="py-20 md:py-28">
         <div className="container-full">
           <motion.div
@@ -201,7 +201,7 @@ const Index = () => {
               @feitoComCarinho
             </h2>
             <p className="text-muted-foreground max-w-md mx-auto">
-              Inspire-se com os seus próprios filhos e venha torcer por eles, em um espaço e momento acolhedor, ao mesmo tempo de conquistas.
+              Inspire-se com os seus próprios filhos e venha torcer por eles, em um espaço e momento acolhedor para conquistas.
             </p>
           </motion.div>
 
