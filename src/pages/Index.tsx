@@ -279,7 +279,7 @@ const Index = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-              className="relative group"
+              className="relative group mx-auto"
             >
               <img src="/imgs/organizacao.png" alt={featuredCollection.name} 
               className="object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-100"/>
