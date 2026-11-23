@@ -76,7 +76,7 @@ const Index = () => {
             >
               {"\n"}
             </motion.p>
-            <h1 className="font-serif text-[clamp(1.9rem,7vw,8rem)] whitespace-nowrap text-white mb-8 leading-[0.9] tracking-tight">
+            <h1 className="font-serif font-bold text-[clamp(1.9rem,7vw,8rem)] whitespace-nowrap text-white mb-8 leading-[0.9] tracking-tight">
               Desafio de Xadrez
             </h1>
             <p className="text-base md:text-lg text-white/80 mb-10 leading-relaxed max-w-lg mx-auto whitespace-pre-line">
