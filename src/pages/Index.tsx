@@ -25,12 +25,12 @@ const Index = () => {
 
   // Instagram placeholder images
   const instagramImages = [
-    "/images/photo-1618221195710-dd6b41faaea6-w400.jpg",
-    "/images/photo-1600210492486-724fe5c67fb0-w400.jpg",
-    "/images/photo-1600585154340-be6161a56a0c-w400.jpg",
-    "/images/photo-1586023492125-27b2c045efd7-w400.jpg",
-    "/images/photo-1565193566173-7a0ee3dbe261-w400.jpg",
-    "/images/photo-1578500494198-246f612d3b3d-w400.jpg",
+    "/imgs/T1_W400.jpg",
+    "/imgs/T2_W400.jpg",
+    "/imgs/T3_W400.jpg",
+    "/imgs/T4_W400.jpg",
+    "/imgs/T5_W400.jpg",
+    "/imgs/T6_W400.jpg",
   ];
 
   return (
