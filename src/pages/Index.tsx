@@ -77,7 +77,7 @@ const Index = () => {
                 className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium"
               >
                 <Link to="/products">
-                  + INSCRIÇÕES
+                  INSCRIÇÕES
                   <ArrowRight className="ml-3 w-4 h-4" />
                 </Link>
               </Button>
