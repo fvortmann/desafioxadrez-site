@@ -7,6 +7,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { CollectionCard } from "@/components/CollectionCard";
 import { collections, getNewProducts, products } from "@/data/products";
 import { Button } from "@/components/ui/button";
+import heroPhoto from "@/assets/torneio_xadrez_criancas.jpg.asset.json";
 
 const Index = () => {
   const newProducts = getNewProducts();
@@ -37,11 +38,12 @@ const Index = () => {
       <section ref={heroRef} className="relative h-[100svh] -mt-16 md:-mt-20 overflow-hidden">
         <motion.div className="absolute inset-0" style={{ y: heroImageY }}>
           <img
-            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80"
-            alt="Curated home lifestyle"
-            className="w-full h-[120%] object-cover animate-ken-burns"
+            src={heroPhoto.url}
+            alt="Crianças participantes do Desafio de Xadrez com troféus e medalhas"
+            className="w-full h-[120%] object-cover object-[center_30%] animate-ken-burns"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-charcoal/30 via-charcoal/10 to-charcoal/50" />
+          <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/20 to-charcoal/75" />
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/30 to-transparent" />
         </motion.div>
 
         <motion.div
