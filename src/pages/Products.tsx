@@ -96,7 +96,7 @@ const Products = () => {
           <img
             src={
               currentCollection?.heroImage ||
-              "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80"
+              "/images/photo-1600607687939-ce8a6c25118c-w1920.jpg"
             }
             alt={currentCollection?.name || "All Products"}
             className="w-full h-full object-cover transition-opacity duration-700"
@@ -233,7 +233,7 @@ const Products = () => {
       <section className="relative h-[50vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+            src="/images/photo-1600585154340-be6161a56a0c-w1920.jpg"
             alt="Interior lifestyle"
             className="w-full h-full object-cover"
           />

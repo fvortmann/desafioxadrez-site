@@ -1,0 +1,1 @@
+- Keep all images, fonts and media as files inside the repo (`src/assets/` imports or `public/`), never CDN `.asset.json` pointers or hotlinked URLs — the site is deployed to GitHub Pages, where Lovable's asset CDN paths don't resolve.

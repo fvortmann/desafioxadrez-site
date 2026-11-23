@@ -7,7 +7,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { CollectionCard } from "@/components/CollectionCard";
 import { collections, getNewProducts, products } from "@/data/products";
 import { Button } from "@/components/ui/button";
-import heroPhoto from "@/assets/torneio_xadrez_criancas.jpg.asset.json";
+import heroPhoto from "@/assets/torneio_xadrez_criancas.jpg";
 
 const Index = () => {
   const newProducts = getNewProducts();
@@ -24,12 +24,12 @@ const Index = () => {
 
   // Instagram placeholder images
   const instagramImages = [
-    "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400&q=80",
-    "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&q=80",
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=80",
-    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&q=80",
-    "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=400&q=80",
-    "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=400&q=80",
+    "/images/photo-1618221195710-dd6b41faaea6-w400.jpg",
+    "/images/photo-1600210492486-724fe5c67fb0-w400.jpg",
+    "/images/photo-1600585154340-be6161a56a0c-w400.jpg",
+    "/images/photo-1586023492125-27b2c045efd7-w400.jpg",
+    "/images/photo-1565193566173-7a0ee3dbe261-w400.jpg",
+    "/images/photo-1578500494198-246f612d3b3d-w400.jpg",
   ];
 
   return (
@@ -38,7 +38,7 @@ const Index = () => {
       <section ref={heroRef} className="relative h-[100svh] -mt-16 md:-mt-20 overflow-hidden">
         <motion.div className="absolute inset-0" style={{ y: heroImageY }}>
           <img
-            src={heroPhoto.url}
+            src={heroPhoto}
             alt="Crianças participantes do Desafio de Xadrez com troféus e medalhas"
             className="w-full h-[120%] object-cover object-[center_30%] animate-ken-burns"
           />

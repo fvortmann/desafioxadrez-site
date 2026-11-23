@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/logo-desafio-de-xadrez.png.asset.json";
+import logoAsset from "@/assets/logo-desafio-de-xadrez.png";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { collections } from "@/data/products";
@@ -17,7 +17,7 @@ export const Footer = () => {
                 aria-label="Desafio de Xadrez - página inicial"
               >
                 <img
-                  src={logoAsset.url}
+                  src={logoAsset}
                   alt="Desafio de Xadrez"
                   className="h-14 md:h-16 w-auto"
                 />

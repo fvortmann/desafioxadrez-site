@@ -19,7 +19,7 @@ const About = () => {
       <section ref={heroRef} className="relative h-[80vh] md:h-screen overflow-hidden">
         <motion.div className="absolute inset-0" style={{ y: heroImageY }}>
           <img
-            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80"
+            src="/images/photo-1556909114-f6e7ad7d3136-w1920.jpg"
             alt="Artisan workshop"
             className="w-full h-[120%] object-cover"
           />
@@ -114,7 +114,7 @@ const About = () => {
             >
               <div className="aspect-[4/5] overflow-hidden group">
                 <img
-                  src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=1200&q=80"
+                  src="/images/photo-1493663284031-b7e3aefcae8e-w1200.jpg"
                   alt="Living space"
                   className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                 />
@@ -132,7 +132,7 @@ const About = () => {
           >
             <div className="relative h-[50vh] md:h-[70vh] overflow-hidden group">
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80"
+                src="/images/photo-1600607687939-ce8a6c25118c-w1920.jpg"
                 alt="Workshop detail"
                 className="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105"
               />
@@ -166,7 +166,7 @@ const About = () => {
             >
               <div className="aspect-[4/5] overflow-hidden group">
                 <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
+                  src="/images/photo-1558618666-fcd25c85cd64-w1200.jpg"
                   alt="Artisan hands at work"
                   className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                 />
@@ -272,15 +272,15 @@ const About = () => {
         <div className="grid grid-cols-3 gap-2 md:gap-4 h-[35vh] md:h-[50vh]">
           {[
             {
-              src: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80",
+              src: "/images/photo-1565193566173-7a0ee3dbe261-w800.jpg",
               alt: "Handcrafted ceramics",
             },
             {
-              src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80",
+              src: "/images/photo-1616486338812-3dadae4b4ace-w800.jpg",
               alt: "Styled living space",
             },
             {
-              src: "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=800&q=80",
+              src: "/images/photo-1584100936595-c0654b55a2e2-w800.jpg",
               alt: "Artisan textiles",
             },
           ].map((img, i) => (
@@ -306,7 +306,7 @@ const About = () => {
       <section className="py-28 md:py-40 relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+            src="/images/photo-1600585154340-be6161a56a0c-w1920.jpg"
             alt=""
             className="w-full h-full object-cover"
           />
