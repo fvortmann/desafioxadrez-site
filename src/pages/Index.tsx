@@ -246,9 +246,9 @@ const Index = () => {
             >
               <img
                 src="/imgs/apoio.png" alt={featuredCollection.name}
-                className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-100"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent" />
+              <div className="absolute inset-0"/>
             </motion.div>
 
             <motion.div
@@ -281,8 +281,9 @@ const Index = () => {
               transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const }}
               className="relative aspect-[2/5] overflow-hidden group"
             >
-              <img src="/imgs/organizacao.png" alt={featuredCollection.name} className="object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-100"/>
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent" />
+              <img src="/imgs/organizacao.png" alt={featuredCollection.name} 
+              className="object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-100"/>
+              <div className="absolute inset-0" />
             </motion.div>
 
             <motion.div
