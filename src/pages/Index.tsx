@@ -132,18 +132,21 @@ const Index = () => {
               <CollectionCard
                 collection={displayedCollections[2]}
                 index={2}
+                variant="square"
               />
             </div>
             <div className="md:col-span-4">
               <CollectionCard
                 collection={displayedCollections[3]}
                 index={3}
+                variant="square"
               />
             </div>
             <div className="md:col-span-4">
               <CollectionCard
                 collection={displayedCollections[4]}
                 index={4}
+                variant="square"
               />
             </div>
 
