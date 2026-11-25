@@ -541,3 +541,9 @@
     transform: translateY(-6px);
   }
 }
+
+/* Fundo azul semitransparente só na área de texto dos cards */
+.card-text-backdrop {
+  --card-text-backdrop: 205 59% 25%;
+  background-color: hsl(var(--card-text-backdrop) / 0.6);
+}

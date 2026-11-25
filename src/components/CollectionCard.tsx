@@ -41,7 +41,7 @@ export const CollectionCard = ({ collection, index = 0, variant = "default" }: C
           <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-colors duration-700" />
 
           {/* Content */}
-          <div className="absolute inset-0 flex flex-col justify-end p-7 md:p-8">
+          <div className={variant === "square" ? "absolute inset-x-0 bottom-0 flex flex-col p-6 md:p-7 card-text-backdrop" : "absolute inset-0 flex flex-col justify-end p-7 md:p-8"}>
             {/* Collection label */}
             <p className="text-[10px] font-semibold tracking-[0.25em] uppercase text-white/60 mb-2 transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
               Veja
