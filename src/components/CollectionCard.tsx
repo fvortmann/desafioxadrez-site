@@ -48,7 +48,7 @@ export const CollectionCard = ({ collection, index = 0, variant = "default" }: C
             </p>
 
             {/* Fixed text block: title + description */}
-            <div className={variant === "square" ? "card-text-backdrop self-start rounded-lg px-4 py-3 backdrop-blur-[2px]" : ""}>
+            <div className={variant === "square" ? "card-text-backdrop self-start px-4 py-3 backdrop-blur-[2px]" : ""}>
               {/* Title */}
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-2 transform group-hover:-translate-y-1 transition-transform duration-500">
                 {collection.name}

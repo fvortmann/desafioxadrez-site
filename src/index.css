@@ -546,4 +546,5 @@
 .card-text-backdrop {
   --card-text-backdrop: 205 59% 25%;
   background-color: hsl(var(--card-text-backdrop) / 0.75);
+  border-radius: 16px;
 }
