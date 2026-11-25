@@ -12,6 +12,7 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
 import InstitutionalPage from "./pages/InstitutionalPage";
+import Contato from "./pages/Contato";
 
 const queryClient = new QueryClient();
 
@@ -33,7 +34,7 @@ const App = () => (
           />
           <Route
             path="/contato"
-            element={<InstitutionalPage title="CONTATO" description="Informações de contato em breve." />}
+            element={<Contato />}
           />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
