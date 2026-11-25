@@ -11,8 +11,8 @@ import { toast } from "sonner";
 
 const WHATSAPP_NUMBER = "552182320002";
 const PHONE_DISPLAY = "(21) 8232-0002";
-const EMAIL = "a definir";
-const HOURS = "a definir";
+const EMAIL = "mail@hotmail.com";
+const HOURS = "Mon–Fri: 9AM – 7PM\nSat: 9AM – 5PM · Sun: Closed";
 
 const schema = z.object({
   nome: z.string().trim().min(1, "Informe seu nome").max(100),
@@ -101,7 +101,7 @@ const Contato = () => {
             </li>
             <li className="flex items-start gap-4">
               <Clock className="h-6 w-6 text-primary shrink-0" />
-              <div><p className="font-semibold">Horário de atendimento</p><p className="text-muted-foreground">{HOURS}</p></div>
+              <div><p className="font-semibold">Horário de atendimento</p><p className="text-muted-foreground whitespace-pre-line">{HOURS}</p></div>
             </li>
           </ul>
         </div>

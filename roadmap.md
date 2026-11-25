@@ -1,3 +1,2 @@
 - [x] Adicionar ESG e CONTATO aos menus do computador e do celular.
 - [x] Página CONTATO com formulário, WhatsApp e dados.
-- [ ] E-mail e horário de atendimento em CONTATO; aguarda o usuário.
