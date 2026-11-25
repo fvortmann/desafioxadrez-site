@@ -542,8 +542,8 @@
   }
 }
 
-/* Fundo azul semitransparente só na área de texto dos cards */
+/* Fundo azul semitransparente só na caixa do título e da descrição dos cards */
 .card-text-backdrop {
   --card-text-backdrop: 205 59% 25%;
-  background-color: hsl(var(--card-text-backdrop) / 0.6);
+  background-color: hsl(var(--card-text-backdrop) / 0.75);
 }
