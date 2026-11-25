@@ -25,7 +25,7 @@ export const CollectionCard = ({ collection, index = 0, variant = "default" }: C
           className={`relative overflow-hidden bg-muted/50 ${
             variant === "wide" ? "aspect-[16/9]" :
             variant === "tall" ? "aspect-[2/3]" :
-            variant === "square" ? "aspect-square" :
+            variant === "square" ? "aspect-[676/620]" :
             "aspect-[3/4]"
           }`}
         >
@@ -33,7 +33,7 @@ export const CollectionCard = ({ collection, index = 0, variant = "default" }: C
           <img
             src={collection.image}
             alt={collection.name}
-            className={`w-full h-full ${variant === "square" ? "object-contain" : "object-cover"} transition-transform duration-[1.2s] ease-out group-hover:scale-110`}
+            className={`w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-110`}
           />
 
           {/* Multi-layer gradient overlay */}
