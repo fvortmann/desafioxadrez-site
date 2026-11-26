@@ -113,17 +113,8 @@ const Index = () => {
       </section>
 
       {/* Programacao, Regulamento e Inscricao - Grid */}
-      <section className="py-24 md:py-32">
+      <section className="py-10 md:py-14">
         <div className="container-full">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >            
-          </motion.div>
-
           {/* Asymmetric grid layout */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">                      
 
