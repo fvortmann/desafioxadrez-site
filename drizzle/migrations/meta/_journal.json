@@ -15,6 +15,13 @@
       "when": 1795651584391,
       "tag": "0001_tighten_contato_insert_policy",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1795731066518,
+      "tag": "0002_contato_insert_only_grants",
+      "breakpoints": true
     }
   ]
 }
