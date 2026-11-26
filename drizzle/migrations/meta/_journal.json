@@ -8,6 +8,13 @@
       "when": 1795650336091,
       "tag": "0000_create_contato",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1795651584391,
+      "tag": "0001_tighten_contato_insert_policy",
+      "breakpoints": true
     }
   ]
 }
