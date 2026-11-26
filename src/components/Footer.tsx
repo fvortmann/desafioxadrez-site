@@ -9,7 +9,7 @@ export const Footer = () => {
       
       {/* Main footer content */}
       <div className="container-full py-12 md:py-16">
-        <div className="grid gap-10 md:grid-cols-4">          
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">          
           
           {/* Explore */}
           <div>
@@ -72,15 +72,17 @@ export const Footer = () => {
               <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-background/40 mb-3">
                 Newsletter
               </p>
-              <form className="flex gap-0">
+              <form className="flex gap-0 w-full" onSubmit={(e) => e.preventDefault()}>
                 <input
                   type="email"
                   placeholder="Informe seu email"
-                  className="flex-1 h-12 px-4 text-sm bg-background/5 border border-background/15 text-background placeholder:text-background/30 focus:outline-none focus:border-background/40 transition-colors"
+                  aria-label="Seu e-mail"
+                  className="min-w-0 flex-1 h-11 px-3 text-sm bg-background/5 border border-background/15 text-background placeholder:text-background/30 focus:outline-none focus:border-background/40 transition-colors"
                 />
                 <button
                   type="submit"
-                  className="h-12 px-5 text-sm font-medium bg-background text-foreground hover:bg-background/90 transition-colors"
+                  aria-label="Assinar newsletter"
+                  className="shrink-0 h-11 px-4 text-sm font-medium bg-background text-foreground hover:bg-background/90 transition-colors"
                 >
                   <ArrowRight className="w-4 h-4" />
                 </button>

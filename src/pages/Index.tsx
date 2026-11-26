@@ -146,7 +146,7 @@ const Index = () => {
       </section>
 
       {/* Desafio Section */}
-      <section className="py-24 md:py-32 bg-linen">
+      <section className="py-10 md:py-14 bg-linen">
         <div className="container-narrow text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -157,17 +157,17 @@ const Index = () => {
             <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-6">
               Desafios
             </p>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-[1.3] mb-8">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-[1.3] mb-6">
               Acreditamos que desafios e riscos controlados movem fronteiras e preparam as crianças para o <span className="italic">FUTURO</span>.
             </h2>
-            <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
               Venham participar desta divertida aventura!!!
             </p>
             <Button
               asChild
               variant="outline"
               size="lg"
-              className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase"
+              className="rounded-none px-6 md:px-10 py-6 text-sm tracking-[0.15em] uppercase whitespace-normal h-auto"
             >
               <Link to="/about">
                 Veja mais projetos.
@@ -179,14 +179,14 @@ const Index = () => {
       </section>
 
       {/* Torneios Passados Section */}
-      <section className="py-20 md:py-28">
+      <section className="py-10 md:py-14">
         <div className="container-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-8"
           >
             <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-3">
               Veja nossos torneios passados.
@@ -228,7 +228,7 @@ const Index = () => {
       </section>
 
       {/* Featured Collection */}
-      <section className="py-20 md:py-28">
+      <section className="py-10 md:py-14 overflow-x-hidden">
         <div className="container-full">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
             <motion.div
@@ -250,11 +250,11 @@ const Index = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-              className="md:py-12"
+              className="text-center md:text-left"
             >
               <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-4">Apoio</p>
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-[0.95]">Patrocinadora Ouro do evento.</h2>
-              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">Uma parceria de longa data que contribui para tornar este evento possível.</p>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md mx-auto md:mx-0">Uma parceria de longa data que contribui para tornar este evento possível.</p>
               <Button asChild size="lg" className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium">
                 <Link to="/#">⭐⭐⭐⭐⭐</Link>
               </Button>
@@ -265,7 +265,7 @@ const Index = () => {
       
 
       {/* Organização */}      
-      <section className="py-20 md:py-28">
+      <section className="py-10 md:py-14 overflow-x-hidden">
         <div className="container-full">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
             <motion.div
@@ -276,7 +276,7 @@ const Index = () => {
               className="relative group mx-auto"
             >
               <img src="/imgs/organizacao.png" alt={featuredCollection.name} 
-              className="object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-100"/>
+              className="w-full max-w-md md:max-w-none object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-100"/>
               <div className="absolute inset-0" />
             </motion.div>
 
@@ -285,11 +285,11 @@ const Index = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] as const }}
-              className="md:py-12"
+              className="text-center md:text-left"
             >
               <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-4">Organização</p>
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-[0.95]">Professor Wagner Vortmann</h2>
-              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">Juntos somos mais fortes.</p>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md mx-auto md:mx-0">Juntos somos mais fortes.</p>
               <Button asChild size="lg" className="rounded-none px-10 py-6 text-sm tracking-[0.15em] uppercase btn-premium">
                 <Link to="/#">👑👑👑👑👑</Link>
               </Button>
